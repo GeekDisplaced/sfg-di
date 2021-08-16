@@ -9,14 +9,12 @@ class ConstructorInjectedControllerTest {
     ConstructorInjectedController controller;
 
     @BeforeEach
-    void setUp() {
+    void setup() {
         controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
 
     @Test
     void getGreeting() {
-
         System.out.println(controller.getGreeting());
-
     }
 }
