@@ -1,4 +1,4 @@
-package guru.springframework.sfgdi.services;
+package guru.springframework.sfgdi.lifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
