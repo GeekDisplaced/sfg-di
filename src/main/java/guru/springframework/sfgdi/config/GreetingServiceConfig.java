@@ -10,17 +10,20 @@ import org.springframework.context.annotation.Configuration;
 public class GreetingServiceConfig {
 
     @Bean
-    InjectedByConstructorGreetingService injectedByConstructcrGreetingService() {
+    InjectedByConstructorGreetingService injectedByConstructorGreetingService() {
+
         return new InjectedByConstructorGreetingService();
     }
 
     @Bean
     InjectedBySetterGreetingService injectedBySetterGreetingService() {
+
         return new InjectedBySetterGreetingService();
     }
 
     @Bean
     InjectedByPropertyGreetingService injectedByPropertyGreetingService() {
+
         return new InjectedByPropertyGreetingService();
     }
 }

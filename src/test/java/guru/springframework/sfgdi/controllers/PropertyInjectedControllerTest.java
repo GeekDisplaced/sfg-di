@@ -6,19 +6,13 @@ import org.junit.jupiter.api.Test;
 
 class PropertyInjectedControllerTest {
 
-    SetterInjectedController controller;
+    InjectedByPropertyController controller;
 
     @BeforeEach
-<<<<<<< Updated upstream
-    void setup() {
-        controller = new SetterInjectedController();
-        controller.setGreetingService(new ConstructorGreetingService());
-=======
     void setUp() {
-        controller = new PropertyInjectedController();
+        controller = new InjectedByPropertyController();
 
         controller.greetingService = new InjectedByConstructorGreetingService();
->>>>>>> Stashed changes
     }
 
     @Test

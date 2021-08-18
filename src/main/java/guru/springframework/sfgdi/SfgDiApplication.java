@@ -14,18 +14,18 @@ public class SfgDiApplication {
 
 		System.out.println("----------   Property Injection & Qualifier Annotation   ---------");
 
-		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
+		InjectedByPropertyController propertyInjectedController = (InjectedByPropertyController) ctx.getBean("injectedByPropertyController");
 		System.out.println(propertyInjectedController.getGreeting());
 
 		System.out.println("----------    Setter Injection & Qualifier Annotation    ---------");
 
-		SetterInjectedController setterInjectedController = (SetterInjectedController) ctx.getBean("setterInjectedController");
+		InjectedBySetterController setterInjectedController = (InjectedBySetterController) ctx.getBean("injectedBySetterController");
 		System.out.println(setterInjectedController.getGreeting());
 
 		System.out.println("---------- Constructor  Injection & Qualifier Annotation ---------");
 
-		ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
-		System.out.println(constructorInjectedController.getGreeting());
+		InjectedByConstructorController injectedByConstructorController = (InjectedByConstructorController) ctx.getBean("injectedByConstructorController");
+		System.out.println(injectedByConstructorController.getGreeting());
 
 		System.out.println("---------- Constructor Injection & Primary Annotation ---------");
 

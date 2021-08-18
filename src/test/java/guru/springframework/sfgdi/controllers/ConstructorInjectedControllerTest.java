@@ -6,16 +6,11 @@ import org.junit.jupiter.api.Test;
 
 class ConstructorInjectedControllerTest {
 
-    ConstructorInjectedController controller;
+    InjectedByConstructorController controller;
 
     @BeforeEach
-<<<<<<< Updated upstream
-    void setup() {
-        controller = new ConstructorInjectedController(new ConstructorGreetingService());
-=======
     void setUp() {
-        controller = new ConstructorInjectedController(new InjectedByConstructorGreetingService());
->>>>>>> Stashed changes
+        controller = new InjectedByConstructorController(new InjectedByConstructorGreetingService());
     }
 
     @Test

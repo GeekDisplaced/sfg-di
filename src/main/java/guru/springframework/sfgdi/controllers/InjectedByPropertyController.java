@@ -6,19 +6,11 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class SetterInjectedController {
+public class InjectedByPropertyController {
 
-    private GreetingService greetingService;
-
-<<<<<<< Updated upstream
-    @Qualifier("setterGreetingService")
-=======
-    @Qualifier("injectedBySetterGreetingService")
->>>>>>> Stashed changes
+    @Qualifier("injectedByPropertyGreetingService")
     @Autowired
-    public void setGreetingService(GreetingService greetingService) {
-        this.greetingService = greetingService;
-    }
+    public GreetingService greetingService;
 
     public String getGreeting(){
         return greetingService.sayGreeting();
