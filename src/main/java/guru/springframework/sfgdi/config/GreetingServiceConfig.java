@@ -5,10 +5,9 @@ import com.springframework.pets.PetServiceFactory;
 import guru.springframework.sfgdi.respositories.I18nEnglishGreetingRepository;
 import guru.springframework.sfgdi.respositories.I18nEnglishGreetingRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
+
+@ImportResource("classpath:application-config.xml")
 
 @Configuration
 public class GreetingServiceConfig {
@@ -63,21 +62,21 @@ public class GreetingServiceConfig {
         return new PrimaryGreetingService();
     }
 
-    @Bean
-    InjectedByConstructorGreetingService injectedByConstructorGreetingService() {
-
-        return new InjectedByConstructorGreetingService();
-    }
-
-    @Bean
-    InjectedBySetterGreetingService injectedBySetterGreetingService() {
-
-        return new InjectedBySetterGreetingService();
-    }
-
-    @Bean
-    InjectedByPropertyGreetingService injectedByPropertyGreetingService() {
-
-        return new InjectedByPropertyGreetingService();
-    }
+//    @Bean
+//    InjectedByConstructorGreetingService injectedByConstructorGreetingService() {
+//
+//        return new InjectedByConstructorGreetingService();
+//    }
+//
+//    @Bean
+//    InjectedBySetterGreetingService injectedBySetterGreetingService() {
+//
+//        return new InjectedBySetterGreetingService();
+//    }
+//
+//    @Bean
+//    InjectedByPropertyGreetingService injectedByPropertyGreetingService() {
+//
+//        return new InjectedByPropertyGreetingService();
+//    }
 }
