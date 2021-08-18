@@ -1,6 +1,6 @@
 package guru.springframework.sfgdi.services;
 
-import guru.springframework.sfgdi.respository.I18nEnglishGreetingRepository;
+import guru.springframework.sfgdi.respositories.I18nEnglishGreetingRepository;
 
 public class I18nEnglishGreetingService implements I18nGreetingService {
 

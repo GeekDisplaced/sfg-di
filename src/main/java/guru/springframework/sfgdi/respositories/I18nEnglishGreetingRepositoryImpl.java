@@ -1,4 +1,4 @@
-package guru.springframework.sfgdi.respository;
+package guru.springframework.sfgdi.respositories;
 
 public class I18nEnglishGreetingRepositoryImpl implements I18nEnglishGreetingRepository {
 
