@@ -10,7 +10,11 @@ public class SetterInjectedController {
 
     private GreetingService greetingService;
 
+<<<<<<< Updated upstream
     @Qualifier("setterGreetingService")
+=======
+    @Qualifier("injectedBySetterGreetingService")
+>>>>>>> Stashed changes
     @Autowired
     public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;

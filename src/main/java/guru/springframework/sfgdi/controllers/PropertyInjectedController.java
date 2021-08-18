@@ -8,7 +8,11 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PropertyInjectedController {
 
+<<<<<<< Updated upstream
     @Qualifier("propertyGreetingService")
+=======
+    @Qualifier("injectedByPropertyGreetingService")
+>>>>>>> Stashed changes
     @Autowired
     public GreetingService greetingService;
 
