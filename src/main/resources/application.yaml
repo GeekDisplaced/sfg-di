@@ -1,0 +1,6 @@
+#spring.profiles.active=default
+spring:
+  profiles:
+    active: de,cat,dev
+#spring.profiles.active=en
+#spring.profiles.active=es

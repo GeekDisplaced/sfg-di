@@ -1,0 +1,4 @@
+guru:
+  username: yml-superuser
+  password: yml-password
+  jdbcUrl: www.apple-yml.com
