@@ -18,7 +18,7 @@ public class GreetingServiceConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(sfgConstructorConfig.getUsername());
         fakeDataSource.setPassword(sfgConstructorConfig.getPassword());
-        fakeDataSource.setJdbcurl(sfgConstructorConfig.getJdbcurl());
+        fakeDataSource.setJdbcUrl(sfgConstructorConfig.getJdbcurl());
         return fakeDataSource;
     }
 
@@ -64,6 +64,21 @@ public class GreetingServiceConfig {
     I18nSpanishGreetingService i18nSpanishGreetingService() {
 
         return new I18nSpanishGreetingService();
+    }
+
+    @Bean
+    InjectedByConstructorGreetingService injectedByConstructorGreetingService() {
+        return new InjectedByConstructorGreetingService();
+    }
+
+    @Bean
+    InjectedBySetterGreetingService injectedBySetterGreetingService() {
+        return new InjectedBySetterGreetingService();
+    }
+
+    @Bean
+    InjectedByPropertyGreetingService injectedByPropertyGreetingService() {
+        return new InjectedByPropertyGreetingService();
     }
 
     @Primary
